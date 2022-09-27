@@ -1,0 +1,65 @@
+//Colors------------------------------
+
+//Basic
+$white: #ffffff;
+$black: #000000;
+
+//Grey/Neutral
+$grey1: #f1f1f1;
+$grey2: #e4e4e4;
+$grey3: #cacaca;
+$grey4: #b1b1b1;
+$grey5: #979797;
+$grey6: #7d7d7d;
+$grey7: #696969;
+$grey8: #555555;
+$grey9: #414141;
+$grey10: #2d2d2d;
+$grey11: #191919;
+
+//Primary
+$indigo: #162D54;
+$blue: #40A2D9;
+
+//Mains
+$txt-color: #414141;
+$bg-color: #ffffff;
+$bg-color2:#D1D9DD;
+
+
+//Shadows------------------------------
+$box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+//Fonts------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+      font-family: 'Goldenbook';
+      src: url('../assets/Fonts/Goldenbook/Goldenbook\ Regular.otf');
+      font-weight: normal;
+      font-style: normal;
+}
+
+@font-face {
+      font-family: 'Goldenbook';
+      src: url('../assets/Fonts/Goldenbook/Goldenbook\ Regular.otf');
+      font-weight: normal;
+      font-style: normal;
+}
+
+
+$Montserrat:'Montserrat', sans-serif;
+$Goldenbook:'Goldenbook', sans-serif;
+
+
+//Widths------------------------------
+$xs-width: 320px;
+$sm-width: 640px;
+$md-width: 768px;
+$lg-width: 1024px;
+$xl-width: 1280px;
+$xxl-width: 1536px;
+$xxxl-width: 1920px;
+
+//Grid------------------------------
+$basic: 8px;
