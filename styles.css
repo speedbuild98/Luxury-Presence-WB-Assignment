@@ -64,14 +64,17 @@ img {
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
-  background-color: #162D54;
+  background-color: transparent;
   font-weight: 700;
   padding: 20px 0;
-  box-shadow: 0px 1px 5px 1px #40A2D9;
   position: fixed;
   color: #ffffff;
   width: 100%;
   z-index: 1000;
+  transition: all 0.3s ease-in;
+}
+.nav--active {
+  background-color: #162D54;
 }
 .nav__logo {
   display: flex;
@@ -81,6 +84,7 @@ img {
 }
 .nav__logo-img {
   height: 40px;
+  filter: drop-shadow(1px 1px 2px #162D54);
 }
 .nav__logo-social {
   margin-top: 8px;
@@ -124,9 +128,10 @@ img {
   margin: 4px 0px;
   font-size: 10px;
   border-radius: 50%;
+  color: #40A2D9;
 }
 .nav__ul-i i:hover {
-  border: 2px solid #40A2D9;
+  border: 2px solid #ffffff;
   cursor: pointer;
 }
 .nav__ul-a {
@@ -136,6 +141,7 @@ img {
   transition: all 0.3s ease-in;
   padding: 4px;
   text-align: center;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3137254902));
 }
 .nav__ul-a:hover {
   border-left: 3px solid #40A2D9;
@@ -424,6 +430,7 @@ img {
           animation: show 6s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3137254902));
 }
 @-webkit-keyframes show {
   from {
@@ -442,8 +449,8 @@ img {
   }
 }
 .hero__button:hover {
-  color: #40A2D9;
-  border: 2px solid #40A2D9;
+  color: #162D54;
+  border: 2px solid #162D54;
 }
 .hero__video {
   position: absolute;

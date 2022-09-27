@@ -50,20 +50,25 @@ img {
 //---------------------NAV---------------------\\
 .nav {
       @include flex(center, space-around, row);
-      background-color: $indigo;
+      background-color: transparent;
       font-weight: 700;
       padding: 20px 0;
-      box-shadow: 0px 1px 5px 1px $blue;
       position: fixed;
       color: $white;
       width: 100%;
       z-index: 1000;
+      transition: all .3s ease-in;
+
+      &--active{
+            background-color: $indigo;
+      }
 
       &__logo {
             @include flex(center, center, column);
 
             &-img {
                   height: 40px;
+                  filter: drop-shadow(1px 1px 2px $indigo);
             }
 
             &-social {
@@ -103,9 +108,10 @@ img {
                         margin: 4px 0px;
                         font-size: 10px;
                         border-radius: 50%;
+                        color: $blue;
 
                         &:hover {
-                              border: 2px solid $blue;
+                              border: 2px solid $white;
                               cursor: pointer;
                         }
                   }
@@ -118,6 +124,7 @@ img {
                   transition: all .3s ease-in;
                   padding: 4px;
                   text-align: center;
+                  filter: drop-shadow(1px 1px 1px #00000050);
 
                   &:hover {
                         border-left: 3px solid $blue;
@@ -128,6 +135,7 @@ img {
       }
 
 }
+
 //---------------------HERO---------------------\\
 .hero {
       @include flex(center, center, column);
@@ -340,6 +348,7 @@ img {
             color: $white;
             animation: show 6s linear;
             animation-fill-mode: forwards;
+            filter: drop-shadow(1px 1px 1px #00000050);
 
             @keyframes show {
                   from {opacity: 0;}
@@ -347,8 +356,8 @@ img {
             }
 
             &:hover {
-                  color: $blue;
-                  border: 2px solid $blue;
+                  color: $indigo;
+                  border: 2px solid $indigo;
             }
       }
 
