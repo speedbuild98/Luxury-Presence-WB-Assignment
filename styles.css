@@ -29,6 +29,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 1.5;
+  overflow-x: hidden;
   background-color: #ffffff;
   color: #414141;
 }
@@ -447,7 +448,7 @@ img {
   position: absolute;
   z-index: -1;
   background-size: cover;
-  filter: blur(2px);
+  filter: blur(7px);
 }
 
 .article {
@@ -637,18 +638,4 @@ img {
 }
 .footer a:hover {
   color: #40A2D9;
-}
-
-.spinner {
-  background-image: url(/assets/Logo.webp);
-  height: 100px;
-  width: 200px;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  filter: drop-shadow(2px 2px 1px #40A2D9);
 }/*# sourceMappingURL=styles.css.map */

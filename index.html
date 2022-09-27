@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+      <!-- If u r reading this, thank u 4 your time :) -->
       <!--MetaTags-->
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,27 +18,14 @@
       <link rel="stylesheet" href="styles.css" type="text/css">
       <!--Icons-->
       <script src="https://kit.fontawesome.com/4dcc832fc3.js" crossorigin="anonymous"></script>
+      <!--Animations-->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <!--Title-->
       <title>Marketing Services - Gatien Salaun</title>
 </head>
-
+      <!--WEB-->
 <body>
-      <!--Loader-->
-      <script>
-            document.onreadystatechange = function () {
-            if (document.readyState !== "complete") {
-                  document.querySelector(
-                        "body").style.visibility = "hidden";
-                  document.querySelector(
-                        ".spinner").style.visibility = "visible";
-            } else {
-                  document.querySelector(
-                        ".spinner").style.display = "none";
-                  document.querySelector(
-                        "body").style.visibility = "visible";
-            }
-            }
-      </script>
+
       <!--Navbar-->
       <nav class="nav">
             <div class="nav__logo">
@@ -64,8 +52,11 @@
                   </div>
             </ul>
       </nav>
+
       <!--Hero-->
-      <main id="home" class="hero">
+      <main data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="2000"
+            data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true
+      data-aos-anchor-placement=" top-center" id="home" class="hero">
             <div class="hero__container">
                   <div class="hero__container-box">
                         <div class="hero__container-box-title">
@@ -81,8 +72,11 @@
             <a href="#article" class="hero__button">Get started</a>
             <video class="hero__video" playsinline autoplay muted loop src="/assets/production ID_3945144.mp4"></video>
       </main>
+
       <!--Content-->
-      <article id="article" class="article">
+      <article data-aos="zoom-out" data-aos-offset="200" data-aos-delay="200" data-aos-duration="1000"
+            data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true
+            data-aos-anchor-placement=" top-center" id="article" class="article">
             <div class="article__container container">
                   <h3 class="article__container-h3">Why you should hire an agent who has partnered with a <span>Luxury
                               real
@@ -103,10 +97,13 @@
                   </a>
             </div>
       </article>
+
       <!--Sections-->
       <section id="section" class="section">
 
-            <div id="advertising" class="section__advertising container">
+            <!--Advertising-->
+            <div data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="500"
+                  id="advertising" class="section__advertising container">
                   <img class="section__img" src="/assets/adem-ay-Tk9m_HP4rgQ-unsplash.jpg" alt="advertising">
                   <div class="section__text">
                         <span>Paid Advertising on All Channels</span>
@@ -119,7 +116,9 @@
                   </div>
             </div>
 
-            <div id="content" class="section__content container">
+            <!--Content-->
+            <div data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="500" id="content"
+                  class="section__content container">
                   <img class="section__img" src="/assets/pexels-lumn-293229.jpg" alt="advertising">
                   <div class="section__text">
                         <span>Expert Content Production</span>
@@ -141,7 +140,9 @@
                   </div>
             </div>
 
-            <div id="seo" class="section__seo container">
+            <!--SEO-->
+            <div data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="500" id="seo"
+                  class="section__seo container">
                   <img class="section__img" src="/assets/pexels-pixabay-270637.jpg" alt="advertising">
                   <div class="section__text">
                         <span>Effective Search Engine Optimization</span>
@@ -154,7 +155,9 @@
                   </div>
             </div>
 
-            <div id="marketing" class="section__marketing container">
+            <!--Marketing-->
+            <div data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="500" id="marketing"
+                  class="section__marketing container">
                   <img class="section__img" src="/assets/pexels-dominika-roseclay-905163.jpg" alt="advertising">
                   <div class="section__text">
                         <span>Social Media Marketing</span>
@@ -168,6 +171,7 @@
             </div>
 
       </section>
+
       <!--Footer-->
       <footer class="footer" id="contact">
             <div class="footer__container container">
@@ -176,8 +180,12 @@
                   <a target="_blank" href="https://devgallardo.netlify.app/">Coded with ♥ by Gallardo Lautaro</a>
             </div>
       </footer>
-      <!--Loader-->
-      <div class="spinner" style="visibility: visible; display: none;"></div>
+
+      <!--Animation-->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+            AOS.init();
+      </script>
 </body>
 
 </html>
