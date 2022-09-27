@@ -363,7 +363,6 @@ img {
 //---------------------ARTICLE---------------------\\
 .article{
       @include flex(center, center, column);
-      margin-top: 100px;
       height: 100vh;
       position: relative;
 
