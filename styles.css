@@ -194,7 +194,7 @@ img {
 }
 .hero__container-box-title h1 {
   text-transform: uppercase;
-  color: #555555;
+  color: #fff;
   font-size: 3rem;
   -webkit-animation: mainFadeIn 2s forwards;
   animation: mainFadeIn 2s forwards;
@@ -204,6 +204,7 @@ img {
   display: flex;
   align-items: baseline;
   position: relative;
+  filter: drop-shadow(-1px 1px 2px #555555);
 }
 .hero__container-box-title h1 span {
   width: 0px;
@@ -246,10 +247,11 @@ img {
   opacity: 0;
   font-weight: 600;
   font-family: "Goldenbook", sans-serif;
-  color: #696969;
+  color: #000;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 5px;
+  filter: drop-shadow(-1px 1px 3px #ffffff);
 }
 @-webkit-keyframes mainBlock {
   0% {
@@ -413,12 +415,11 @@ img {
   text-transform: uppercase;
   font-weight: 800;
   padding: 5px 15px;
-  border: 2px solid #b1b1b1;
+  border: 2px solid #ffffff;
   cursor: pointer;
   transition: all 0.3s ease-in;
-  background-color: #ffffff;
   font-size: 1rem;
-  color: #7d7d7d;
+  color: #ffffff;
   -webkit-animation: show 6s linear;
           animation: show 6s linear;
   -webkit-animation-fill-mode: forwards;
